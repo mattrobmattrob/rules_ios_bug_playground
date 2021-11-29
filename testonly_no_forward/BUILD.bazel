@@ -1,0 +1,8 @@
+load("@build_bazel_rules_ios//rules:framework.bzl", "apple_framework")
+
+apple_framework(
+    name = "MockLibrary",
+    testonly = True,
+    srcs = ["Empty.swift"],
+    visibility = ["//visibility:public"],
+)
